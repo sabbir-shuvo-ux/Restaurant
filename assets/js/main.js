@@ -16,6 +16,20 @@ function preloader(){
 	document.querySelector('.preloader').style.display = 'none';
 };
 
+// menu shift
+
+var ul = document.querySelector('.sh_navbar');
+var li = document.querySelectorAll('.sh_navbar li a');
+
+li.forEach(el => {
+	el.addEventListener('click', function () {
+		ul.querySelector('.active_co').classList.remove('active_co');
+
+		el.classList.add('active_co');
+	});
+});
+
+
 //dark mode
 
 var dark_mode = document.querySelector('.bar');

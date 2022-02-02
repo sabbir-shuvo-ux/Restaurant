@@ -15,6 +15,9 @@ a{
 	text-decoration: none;
 }
 
+.active_co{
+    color: #069C54 !important;
+}
 
 /* # --  preloader  --# */
 
